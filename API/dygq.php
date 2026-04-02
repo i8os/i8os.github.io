@@ -1,5 +1,5 @@
 <?php
-$file=dirname(__FILE__)."/asset/dygq.txt";
+$file=dirname(__FILE__)."/dygq.txt";
 if(!file_exists($file))die('音乐文件不存在。');
 $musicLinks=array_filter(array_map('trim',file($file)));
 $music=$musicLinks[array_rand($musicLinks)];
